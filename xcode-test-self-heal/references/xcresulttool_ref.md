@@ -50,7 +50,7 @@ To find failing tests inside the returned JSON structure:
 Key properties of each failure:
 - `.testCaseName._value`: The test class and method (e.g., `MyTests.testExample()`).
 - `.message._value`: The exact failure message/assertion description.
-- `.documentLocationInCreatingWorkspace.url._value`: A `file://` URL pointing to the file and line number where the failure occurred. E.g.: `file:///path/to/MyTests.swift#CharacterRangeLen=0&EndingLineNumber=42&StartingLineNumber=42` (Note: Xcode line numbers in URLs are 0-indexed).
+- `.documentLocationInCreatingWorkspace.url._value`: A file path pointing to the file and line number where the failure occurred. E.g.: `Tests/MyTests.swift#CharacterRangeLen=0&EndingLineNumber=42&StartingLineNumber=42` (Note: Xcode line numbers in URLs are 0-indexed).
 
 ### Export test screenshots and failure attachments
 ```bash

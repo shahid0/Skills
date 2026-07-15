@@ -4,7 +4,7 @@ This directory contains platform-specific implementations demonstrating key soft
 
 Choose your target development platform below:
 
-*   **Swift & SwiftUI (iOS/macOS):** Read [swift_examples.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/examples/swift_examples.md)
-*   **Kotlin, Android, & Kotlin Multiplatform (KMP):** Read [kotlin_examples.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/examples/kotlin_examples.md)
-*   **Dart & Flutter (Cross-platform Mobile):** Read [flutter_examples.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/examples/flutter_examples.md)
-*   **TypeScript (React, Vue, NestJS, Next.js):** Read [typescript_examples.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/examples/typescript_examples.md)
+*   **Swift & SwiftUI (iOS/macOS):** Read [swift_examples.md](swift_examples.md)
+*   **Kotlin, Android, & Kotlin Multiplatform (KMP):** Read [kotlin_examples.md](kotlin_examples.md)
+*   **Dart & Flutter (Cross-platform Mobile):** Read [flutter_examples.md](flutter_examples.md)
+*   **TypeScript (React, Vue, NestJS, Next.js):** Read [typescript_examples.md](typescript_examples.md)

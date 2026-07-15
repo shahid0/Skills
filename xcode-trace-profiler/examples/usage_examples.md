@@ -42,7 +42,7 @@ The wrapper script `trace_analyzer.py` automates the record-export-analyze pipel
 ### 1. Record and Analyze a Command Immediately
 Record CPU usage of a command (e.g., a Python compilation script or executable) and print the top CPU-consuming functions:
 ```bash
-python scripts/trace_analyzer.py --template "Time Profiler" --launch -- /usr/bin/python3 -c "import time; time.sleep(1)"
+python scripts/trace_analyzer.py --template "Time Profiler" --launch -- python3 -c "import time; time.sleep(1)"
 ```
 
 ### 2. Profile a Running SwiftUI/Flutter App by PID/Name

@@ -187,7 +187,7 @@ main() {
             local actual_output="$output_path"
             local temp_mov=""
             if [[ "$output_path" == *.mp4 && $ffmpeg_available -eq 1 ]]; then
-                temp_mov=$(mktemp "/tmp/sim_record_XXXXXX.mov")
+                temp_mov=$(mktemp "./sim_record_XXXXXX.mov")
                 actual_output="$temp_mov"
             fi
 

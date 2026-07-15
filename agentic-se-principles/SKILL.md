@@ -28,15 +28,15 @@ You MUST structure your initial thoughts within `<thinking>` XML tags. Within th
 ### <preflight_checks>
 * **Search First:** You MUST run a `grep_search` or `list_dir` to verify if similar code, models, or service logic already exist before writing new files.
 * **Progressive Context Loading:** When applying any of the core principles, you MUST load and read the detailed specifications from the corresponding reference file:
-  * **CUPID Properties:** [cupid.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/references/cupid.md)
-  * **Clean Architecture:** [clean_architecture.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/references/clean_architecture.md)
-  * **Domain-Driven Design (DDD):** [domain_driven_design.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/references/domain_driven_design.md)
-  * **Contract-First Design:** [contract_first.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/references/contract_first.md)
-  * **API-First Design:** [api_first.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/references/api_first.md)
-  * **Composition Over Inheritance:** [composition_over_inheritance.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/references/composition_over_inheritance.md)
-  * **Dependency Injection (DI):** [dependency_injection.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/references/dependency_injection.md)
-  * **Observability-First Design:** [observability_first.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/references/observability_first.md)
-* **Code Examples Reference:** You MUST refer to [cross_platform_patterns.md](file:///Users/macbookpro/.agents/skills/agentic-se-principles/examples/cross_platform_patterns.md) for platform-specific implementations (Swift, Kotlin, Flutter, TypeScript).
+  * **CUPID Properties:** [cupid.md](references/cupid.md)
+  * **Clean Architecture:** [clean_architecture.md](references/clean_architecture.md)
+  * **Domain-Driven Design (DDD):** [domain_driven_design.md](references/domain_driven_design.md)
+  * **Contract-First Design:** [contract_first.md](references/contract_first.md)
+  * **API-First Design:** [api_first.md](references/api_first.md)
+  * **Composition Over Inheritance:** [composition_over_inheritance.md](references/composition_over_inheritance.md)
+  * **Dependency Injection (DI):** [dependency_injection.md](references/dependency_injection.md)
+  * **Observability-First Design:** [observability_first.md](references/observability_first.md)
+* **Code Examples Reference:** You MUST refer to [cross_platform_patterns.md](examples/cross_platform_patterns.md) for platform-specific implementations (Swift, Kotlin, Flutter, TypeScript).
 </preflight_checks>
 
 ### <architectural_directives>

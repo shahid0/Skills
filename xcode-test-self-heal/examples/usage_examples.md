@@ -43,8 +43,8 @@ final class CalculatorTests: XCTestCase {
 The agent runs the `xcresult_parser.py` script to run the tests and generate a report:
 
 ```bash
-/Users/macbookpro/.agents/skills/self-heal-tests/scripts/xcresult_parser.py \
-  --project /Users/macbookpro/Projects/Calculator/Calculator.xcodeproj \
+scripts/xcresult_parser.py \
+  --project ./Calculator/Calculator.xcodeproj \
   --scheme Calculator \
   --destination "platform=macOS" \
   --output-report ./build/test_report.json \
@@ -70,13 +70,13 @@ The script outputs a clean JSON report containing exact failure context:
     {
       "test_case_name": "CalculatorTests.testDivideByZero()",
       "message": "XCTAssertTrue failed - Division by zero should result in NaN or throw an error based on spec.",
-      "file_path": "/Users/macbookpro/Projects/Calculator/Tests/CalculatorTests.swift",
+      "file_path": "Tests/CalculatorTests.swift",
       "line_number": 10,
-      "url": "file:///Users/macbookpro/Projects/Calculator/Tests/CalculatorTests.swift#CharacterRangeLen=0&EndingLineNumber=9&StartingLineNumber=9",
+      "url": "Tests/CalculatorTests.swift#CharacterRangeLen=0&EndingLineNumber=9&StartingLineNumber=9",
       "screenshots": [
         {
           "file_name": "CalculatorTests_testDivideByZero_1_Failure.png",
-          "path": "/Users/macbookpro/Projects/Calculator/build/Attachments/CalculatorTests_testDivideByZero_1_Failure.png",
+          "path": "build/Attachments/CalculatorTests_testDivideByZero_1_Failure.png",
           "name": "Failure Screenshot",
           "device_name": "MacBook Pro",
           "device_id": "LOCAL-MAC-ID"
@@ -95,7 +95,7 @@ The script outputs a clean JSON report containing exact failure context:
 
 ### Step 1: Read the failure details
 The agent inspects the `test_report.json` and extracts:
-- Failing file: `/Users/macbookpro/Projects/Calculator/Tests/CalculatorTests.swift` at line 10.
+- Failing file: `Tests/CalculatorTests.swift` at line 10.
 - Message: `XCTAssertTrue failed - Division by zero should result in NaN or throw an error based on spec.`
 - Underlying class: `CalculatorTests`, test: `testDivideByZero()`.
 
@@ -121,8 +121,8 @@ The agent uses a file editing tool (like `replace_file_content`) to apply the fi
 The agent runs the `xcresult_parser.py` command again:
 
 ```bash
-/Users/macbookpro/.agents/skills/self-heal-tests/scripts/xcresult_parser.py \
-  --project /Users/macbookpro/Projects/Calculator/Calculator.xcodeproj \
+scripts/xcresult_parser.py \
+  --project ./Calculator/Calculator.xcodeproj \
   --scheme Calculator \
   --destination "platform=macOS" \
   --output-report ./build/test_report.json

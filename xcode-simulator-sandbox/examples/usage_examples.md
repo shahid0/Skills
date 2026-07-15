@@ -19,7 +19,7 @@ python3 scripts/sandbox_tool.py container-path com.example.todoapp
 ```
 **Example Output:**
 ```text
-/Users/macbookpro/Library/Developer/CoreSimulator/Devices/4A16F4F9-E43B-49E8-AC36-61D328C697B7/data/Containers/Data/Application/E3E8C1C8-580F-4554-A6A4-F2D741CECE14
+./Library/Developer/CoreSimulator/Devices/<device-uuid>/data/Containers/Data/Application/<app-uuid>
 ```
 
 ### Retrieve App Bundle Container Path

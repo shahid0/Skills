@@ -10,7 +10,7 @@ You can run the script directly from the terminal by providing command-line over
 
 ```bash
 # Run on currently booted simulator, capturing light and dark appearances
-python3 /Users/macbookpro/.agents/skills/ui-snapshot-matrix/scripts/snapshot_matrix.py \
+python3 scripts/snapshot_matrix.py \
   --app-bundle-id "com.example.MyApp" \
   --appearances light dark \
   --content-sizes medium accessibility-large \
@@ -24,8 +24,8 @@ python3 /Users/macbookpro/.agents/skills/ui-snapshot-matrix/scripts/snapshot_mat
 Run the script by referencing the predefined JSON config file. This ensures consistent parameters are shared across the team:
 
 ```bash
-python3 /Users/macbookpro/.agents/skills/ui-snapshot-matrix/scripts/snapshot_matrix.py \
-  --config /Users/macbookpro/.agents/skills/ui-snapshot-matrix/resources/matrix_config.json \
+python3 scripts/snapshot_matrix.py \
+  --config resources/matrix_config.json \
   --output-dir "./v1_releases"
 ```
 
@@ -105,8 +105,8 @@ echo "Installing app onto booted simulator..."
 xcrun simctl install booted build_output/Build/Products/Debug-iphonesimulator/MyApp.app
 
 echo "Running snapshot matrix..."
-python3 /Users/macbookpro/.agents/skills/ui-snapshot-matrix/scripts/snapshot_matrix.py \
+python3 scripts/snapshot_matrix.py \
   --app-bundle-id "com.example.MyApp" \
-  --config /Users/macbookpro/.agents/skills/ui-snapshot-matrix/resources/matrix_config.json \
+  --config resources/matrix_config.json \
   --output-dir "./snapshots/latest"
 ```

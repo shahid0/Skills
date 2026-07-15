@@ -103,7 +103,7 @@ For each untranslated key, construct your translations with full context awarene
 
 ```bash
 # Save translations to a temp JSON file first
-cat > /tmp/translations_es.json << 'EOF'
+cat > ./translations_es.json << 'EOF'
 {
   "Continue": "Continuar",
   "Cancel": "Cancelar",
@@ -115,7 +115,7 @@ EOF
 python3 scripts/xcstrings_helper.py merge \
   --xcstrings-path <path_to_xcstrings_file> \
   --locale es \
-  --translations /tmp/translations_es.json
+  --translations ./translations_es.json
 ```
 
 ---

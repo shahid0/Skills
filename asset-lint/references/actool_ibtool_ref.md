@@ -88,7 +88,7 @@ xcode-select -p
 ```
 If it is pointing to the wrong Xcode version or command line tools folder, update it:
 ```bash
-sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+sudo xcode-select -s <xcode-app>/Contents/Developer
 ```
 
 ### 2. Linting Strings Files (Syntax Check)

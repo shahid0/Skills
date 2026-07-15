@@ -10,7 +10,7 @@ You can run the script manually from the terminal to inspect all asset catalogs,
 
 ### Run on specific asset catalogs and storyboards
 ```bash
-python3 ~/.agents/skills/asset-lint/scripts/compile_auditor.py \
+python3 scripts/compile_auditor.py \
   --assets path/to/Assets.xcassets \
   --storyboards path/to/Base.lproj/Main.storyboard path/to/Base.lproj/LaunchScreen.storyboard
 ```
@@ -18,7 +18,7 @@ python3 ~/.agents/skills/asset-lint/scripts/compile_auditor.py \
 ### Scan entire directories recursively
 If you pass a directory to `--storyboards`, the script will recursively find all `.storyboard` and `.xib` files:
 ```bash
-python3 ~/.agents/skills/asset-lint/scripts/compile_auditor.py \
+python3 scripts/compile_auditor.py \
   --assets $(find . -name "*.xcassets") \
   --storyboards ./MyXcodeProject \
   --platform iphonesimulator \
@@ -27,7 +27,7 @@ python3 ~/.agents/skills/asset-lint/scripts/compile_auditor.py \
 
 ### Output as JSON for CI or further processing
 ```bash
-python3 ~/.agents/skills/asset-lint/scripts/compile_auditor.py \
+python3 scripts/compile_auditor.py \
   --assets path/to/Assets.xcassets \
   --format json \
   --severity warning
@@ -36,7 +36,7 @@ python3 ~/.agents/skills/asset-lint/scripts/compile_auditor.py \
 ### Fail builds on warnings or errors (Strict mode)
 Use the `--strict` flag to return a non-zero exit status if warnings or errors are found:
 ```bash
-python3 ~/.agents/skills/asset-lint/scripts/compile_auditor.py \
+python3 scripts/compile_auditor.py \
   --assets path/to/Assets.xcassets \
   --strict
 ```
@@ -58,7 +58,7 @@ STAGED_ASSETS=$(git diff --cached --name-only --diff-filter=ACM | grep '\.xcasse
 STAGED_IBS=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(storyboard|xib)$' | tr '\n' ' ')
 
 # Path to the auditor script
-AUDITOR_PATH="$HOME/.agents/skills/asset-lint/scripts/compile_auditor.py"
+AUDITOR_PATH="scripts/compile_auditor.py"
 
 # If no relevant files are staged, skip audit
 if [ -z "$STAGED_ASSETS" ] && [ -z "$STAGED_IBS" ]; then
@@ -113,7 +113,7 @@ This means you can add a **Run Script Phase** to your Xcode project target, and 
 
 ```bash
 # Xcode Build Phase integration for asset-lint
-AUDITOR_PATH="$HOME/.agents/skills/asset-lint/scripts/compile_auditor.py"
+AUDITOR_PATH="scripts/compile_auditor.py"
 
 # Find files relative to the project root
 ASSETS=$(find "${SRCROOT}" -name "*.xcassets" -type d)

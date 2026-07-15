@@ -103,10 +103,10 @@ You can invoke the shell script from a Fastfile lane:
 lane :ship_ipa do |options|
   version = options[:version]
   
-  sh("../../.agents/skills/auto-version-bump/scripts/build_pipeline.sh " \
+  sh("scripts/build_pipeline.sh " \
      "-w MyApp.xcworkspace " \
      "-s MyAppScheme " \
-     "-e ../../.agents/skills/auto-version-bump/resources/ExportOptions.plist " \
+     "-e resources/ExportOptions.plist " \
      "-b both " \
      "-m #{version} " \
      "-o ./build/ipa")
@@ -122,7 +122,7 @@ end
 === Xcode Build & Version Bump Pipeline ===
 Verifying Apple Generic Versioning build settings...
 Verified: Apple Generic Versioning is enabled.
-Navigating to project directory: /Users/macbookpro/Projects/MyApp
+Navigating to project directory: ./MyApp
 Running: agvtool bump
 Setting version of project MyApp to:
     102
@@ -132,15 +132,15 @@ Updating CFBundleVersion in Info.plist(s)...
 Updated CFBundleVersion in MyApp.xcodeproj/../MyApp/Info.plist to 102
 Creating compilation archive...
 User defaults from command line:
-    IDEArchivePathOverride = /Users/macbookpro/Projects/MyApp/build/output/MyAppScheme.xcarchive
+    IDEArchivePathOverride = ./build/output/MyAppScheme.xcarchive
 
 Prepare build
 ...
 ** ARCHIVE SUCCEEDED **
 
 Exporting signed IPA package...
-2026-07-14 13:20:10.123 xcodebuild[5678:90123] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created distribution logs at path /var/folders/.../MyAppScheme_2026-07-14_13-20-10.xcdistributionlogs
-Exported MyAppScheme.ipa to /Users/macbookpro/Projects/MyApp/build/output
+2026-07-14 13:20:10.123 xcodebuild[5678:90123] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created distribution logs at path ./build/logs/MyAppScheme_2026-07-14_13-20-10.xcdistributionlogs
+Exported MyAppScheme.ipa to ./build/output
 ** EXPORT SUCCEEDED **
 
 === Build pipeline completed successfully ===

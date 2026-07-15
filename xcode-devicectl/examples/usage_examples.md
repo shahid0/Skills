@@ -21,7 +21,7 @@ python3 scripts/devicectl_json.py list devices
 
 ### Raw Command
 ```bash
-xcrun devicectl list devices --json-output /tmp/devices.json
+xcrun devicectl list devices --json-output ./build/devices.json
 ```
 
 ### Parsing the Output
@@ -60,7 +60,7 @@ python3 scripts/devicectl_json.py device install app --device "00008101-001C34A9
 
 ### Raw Command
 ```bash
-xcrun devicectl device install app --device "00008101-001C34A90A28001E" --json-output /tmp/install_result.json build/Build/Products/Debug-iphoneos/MyApp.app
+xcrun devicectl device install app --device "00008101-001C34A90A28001E" --json-output ./build/install_result.json build/Build/Products/Debug-iphoneos/MyApp.app
 ```
 
 ---
@@ -76,7 +76,7 @@ python3 scripts/devicectl_json.py device process launch --device "00008101-001C3
 
 ### Raw Command
 ```bash
-xcrun devicectl device process launch --device "00008101-001C34A90A28001E" --json-output /tmp/launch_result.json com.example.myapp
+xcrun devicectl device process launch --device "00008101-001C34A90A28001E" --json-output ./build/launch_result.json com.example.myapp
 ```
 
 ---
@@ -92,7 +92,7 @@ python3 scripts/devicectl_json.py diagnose collect sysdiagnose --device "0000810
 
 ### Raw Command
 ```bash
-xcrun devicectl diagnose collect sysdiagnose --device "00008101-001C34A90A28001E" --json-output /tmp/sysdiagnose_result.json
+xcrun devicectl diagnose collect sysdiagnose --device "00008101-001C34A90A28001E" --json-output ./build/sysdiagnose_result.json
 ```
 
 ---

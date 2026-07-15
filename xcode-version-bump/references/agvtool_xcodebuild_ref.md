@@ -114,7 +114,7 @@ The export options plist dictates how the final IPA is packaged and signed. Belo
 
 ### "Code signing blocked: No profile found matching..."
 - **Cause**: The certificate or profile listed in `ExportOptions.plist` doesn't match the bundle identifier, or doesn't exist on the host machine.
-- **Solution**: Run `security find-identity -p codesigning -v` to list available certificates, and ensure your provision profile is installed under `~/Library/MobileDevice/Provisioning Profiles/`.
+- **Solution**: Run `security find-identity -p codesigning -v` to list available certificates, and ensure your provision profile is installed under `./Library/MobileDevice/Provisioning Profiles/`.
 
 ### "xcodebuild: error: The scheme 'MyApp' is not shared"
 - **Cause**: The scheme has not been marked as "Shared" in Xcode's "Manage Schemes" sheet.

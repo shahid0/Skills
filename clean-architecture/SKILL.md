@@ -27,7 +27,7 @@ You MUST structure your initial thoughts within `<thinking>` XML tags. Within th
 
 ### <preflight_checks>
 * **Search First:** You MUST run a `grep_search` or `list_dir` to verify if similar code, models, or service logic already exist before writing new files.
-* **Progressive Context Loading:** If implementing layers or writing facade classes, you MUST read the detailed architectural constraints at [architecture_guide.md](file:///Users/macbookpro/.gemini/config/skills/clean-architecture/references/architecture_guide.md) and refer to concrete implementation patterns at [cross_platform_patterns.md](file:///Users/macbookpro/.gemini/config/skills/clean-architecture/examples/cross_platform_patterns.md).
+* **Progressive Context Loading:** If implementing layers or writing facade classes, you MUST read the detailed architectural constraints at [architecture_guide.md](references/architecture_guide.md) and refer to concrete implementation patterns at [cross_platform_patterns.md](examples/cross_platform_patterns.md).
 * **Dependency Auditing:** You MUST inspect dependency files (`pubspec.yaml`, `package.json`, `build.gradle.kts`, `Package.swift`) to verify library versions and import scopes before introducing new imports.
 </preflight_checks>
 

@@ -8,7 +8,7 @@ This example demonstrates how to extract, locate, translate, merge, and verify S
 Run the `extract` command to scan Swift files/directories and populate or update the `.xcstrings` catalog file.
 
 ```bash
-python3 /Users/macbookpro/.agents/skills/swiftui-localize/scripts/xcstrings_helper.py extract \
+python3 scripts/xcstrings_helper.py extract \
   --source-files ./Sources/MySwiftUIApp \
   --xcstrings-path ./Sources/MySwiftUIApp/Localizable.xcstrings
 ```
@@ -21,7 +21,7 @@ python3 /Users/macbookpro/.agents/skills/swiftui-localize/scripts/xcstrings_help
 Find out which strings are missing translations for a specific target locale (e.g., Spanish `"es"`).
 
 ```bash
-python3 /Users/macbookpro/.agents/skills/swiftui-localize/scripts/xcstrings_helper.py list-missing \
+python3 scripts/xcstrings_helper.py list-missing \
   --xcstrings-path ./Sources/MySwiftUIApp/Localizable.xcstrings \
   --locale es \
   --json
@@ -68,7 +68,7 @@ The agent uses the missing keys list, inspects the codebase (specifically lookin
 Once translations are generated, merge them back into the `.xcstrings` catalog:
 
 ```bash
-python3 /Users/macbookpro/.agents/skills/swiftui-localize/scripts/xcstrings_helper.py merge \
+python3 scripts/xcstrings_helper.py merge \
   --xcstrings-path ./Sources/MySwiftUIApp/Localizable.xcstrings \
   --locale es \
   --translations '{"Welcome to the localized app": "Bienvenido a la aplicación localizada", "Tap me!": "¡Púlsame!"}'
@@ -80,12 +80,12 @@ python3 /Users/macbookpro/.agents/skills/swiftui-localize/scripts/xcstrings_help
 Finally, verify that the updated catalog compiles cleanly using Xcode's engine.
 
 ```bash
-python3 /Users/macbookpro/.agents/skills/swiftui-localize/scripts/xcstrings_helper.py compile \
+python3 scripts/xcstrings_helper.py compile \
   --xcstrings-path ./Sources/MySwiftUIApp/Localizable.xcstrings
 ```
 
 ### Output:
 ```text
-Compiling catalog: /Users/macbookpro/Sources/MySwiftUIApp/Localizable.xcstrings
+Compiling catalog: ./Sources/MySwiftUIApp/Localizable.xcstrings
 Verification: Catalog compiled successfully with no syntax or structure errors.
 ```
