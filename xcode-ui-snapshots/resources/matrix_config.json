@@ -1,0 +1,31 @@
+{
+  "app_bundle_id": "com.example.MyApp",
+  "devices": [
+    "iPhone 17 Pro",
+    "iPhone 17 Pro Max"
+  ],
+  "appearances": [
+    "light",
+    "dark"
+  ],
+  "content_sizes": [
+    "medium",
+    "accessibility-large",
+    "accessibility-extra-extra-extra-large"
+  ],
+  "status_bar_overrides": {
+    "time": "09:41",
+    "dataNetwork": "wifi",
+    "wifiMode": "active",
+    "wifiBars": 3,
+    "cellularMode": "active",
+    "cellularBars": 4,
+    "batteryState": "charged",
+    "batteryLevel": 100
+  },
+  "delay": 2.5,
+  "launch_args": [
+    "-UIPreferredContentSizeCategoryName",
+    "medium"
+  ]
+}

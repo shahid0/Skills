@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Simulator Automation"
+  short_description: "Automate iOS Simulator boot, app lifecycles, and mocking"
+  default_prompt: "Use $xcode-simulator-automation to control simulator boot state, install/launch applications, spoof location, or mock push notifications."

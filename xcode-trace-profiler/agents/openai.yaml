@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Trace Profiler"
+  short_description: "Record performance traces using xctrace and analyze CPU/Memory bottlenecks"
+  default_prompt: "Use $xcode-trace-profiler to record performance trace files with xctrace, export data to XML, and identify hotspots."

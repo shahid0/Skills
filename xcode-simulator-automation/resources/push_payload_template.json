@@ -1,0 +1,18 @@
+{
+  "Simulator Target Bundle": "com.example.myapp",
+  "aps": {
+    "alert": {
+      "title": "Welcome to Antigravity!",
+      "subtitle": "Simulator Automation",
+      "body": "This is a simulated push notification payload for testing."
+    },
+    "badge": 1,
+    "sound": "default",
+    "category": "WELCOME_CATEGORY",
+    "mutable-content": 1
+  },
+  "customData": {
+    "source": "simctl-automation",
+    "timestamp": 1783987200
+  }
+}

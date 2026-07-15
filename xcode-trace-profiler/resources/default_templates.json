@@ -1,0 +1,44 @@
+{
+  "cpu_hotspots": {
+    "template": "Time Profiler",
+    "description": "Identify functions taking significant CPU time across threads",
+    "metrics": ["CPU Weight", "Self Time", "Sample Count"],
+    "schema": "time-profile"
+  },
+  "memory_leaks": {
+    "template": "Leaks",
+    "description": "Identify memory leaks and allocation histories",
+    "metrics": ["Leak Count", "Bytes Leaked", "Leaked Frame"],
+    "schema": "leaks"
+  },
+  "allocations": {
+    "template": "Allocations",
+    "description": "Track object allocations and memory usage trends",
+    "metrics": ["Allocated Bytes", "Object Count", "Caller Frame"],
+    "schema": "allocations"
+  },
+  "swiftui_rendering": {
+    "template": "SwiftUI",
+    "description": "Profile SwiftUI view body evaluations, state updates, and body execution times",
+    "metrics": ["Body Evaluation Count", "Body Duration"],
+    "schema": "swiftui-view-lifetimes"
+  },
+  "swift_concurrency": {
+    "template": "Swift Concurrency",
+    "description": "Track Swift cooperative thread pool activity and task lifecycles",
+    "metrics": ["Cooperative Thread Pool Size", "Task Run Time", "Actor Hops"],
+    "schema": "swift-concurrency"
+  },
+  "hangs": {
+    "template": "Animation Hitches",
+    "description": "Identify UI hangs and animation hitch durations",
+    "metrics": ["Hitch Duration", "Hitch Rate"],
+    "schema": "hitch-intervals"
+  },
+  "app_launch": {
+    "template": "App Launch",
+    "description": "Profile application startup performance and initialization phases",
+    "metrics": ["Launch Duration", "Time to First Frame"],
+    "schema": "app-launch-phases"
+  }
+}

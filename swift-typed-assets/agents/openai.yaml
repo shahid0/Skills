@@ -1,0 +1,4 @@
+interface:
+  display_name: "Swift Typed Assets"
+  short_description: "Enforce compiler-checked typed resources (ColorResource, ImageResource) instead of raw strings"
+  default_prompt: "Use $swift-typed-assets when working with image or color assets to enforce compiler-checked typed resource lookups."

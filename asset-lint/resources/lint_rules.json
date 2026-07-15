@@ -1,0 +1,34 @@
+{
+  "rules": {
+    "missing_images": {
+      "severity": "error",
+      "category": "asset",
+      "keywords": ["not found", "missing", "does not exist", "unassigned child", "no image"]
+    },
+    "mismatched_dimensions": {
+      "severity": "warning",
+      "category": "asset",
+      "keywords": ["dimension", "scale", "pixel", "size", "resolution", "idiom"]
+    },
+    "unsupported_format": {
+      "severity": "error",
+      "category": "asset",
+      "keywords": ["unsupported format", "color space", "profile", "png", "jpeg"]
+    },
+    "misaligned_layout": {
+      "severity": "warning",
+      "category": "layout",
+      "keywords": ["constraint", "frame for", "will be different", "ambiguous layout", "misaligned"]
+    },
+    "localization_warning": {
+      "severity": "warning",
+      "category": "localization",
+      "keywords": ["localization", "not localized", "missing translation", "localizable"]
+    },
+    "compile_error": {
+      "severity": "error",
+      "category": "compilation",
+      "keywords": ["failed to compile", "compilation error", "unable to resolve", "syntactic error"]
+    }
+  }
+}

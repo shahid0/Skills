@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Test Self-Heal"
+  short_description: "Run, parse, and self-heal failing test cases"
+  default_prompt: "Use $xcode-test-self-heal to execute tests, analyze .xcresult failure details, and iteratively fix the code."

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Method used to export. Options: app-store, validation, ad-hoc, enterprise, development, developer-id -->
+    <key>method</key>
+    <string>app-store</string>
+    
+    <!-- The signing style to use. Options: automatic, manual -->
+    <key>signingStyle</key>
+    <string>automatic</string>
+    
+    <!-- Specify destination. Options: export (default), upload -->
+    <key>destination</key>
+    <string>export</string>
+    
+    <!-- Should symbols be stripped from the Swift standard libraries? -->
+    <key>stripSwiftSymbols</key>
+    <true/>
+    
+    <!-- Rebuild from Bitcode (recommended false for modern apps, required false for iOS 16+) -->
+    <key>compileBitcode</key>
+    <false/>
+    
+    <!-- Thin the app. Set to <none> to export a universal IPA -->
+    <key>thinning</key>
+    <string>&lt;none&gt;</string>
+    
+    <!-- Should the export include symbols? -->
+    <key>uploadSymbols</key>
+    <true/>
+    
+    <!-- If manual signing is used, configure provisioningProfiles mapping -->
+    <!--
+    <key>provisioningProfiles</key>
+    <dict>
+        <key>com.example.bundleid</key>
+        <string>Provisioning Profile Name</string>
+    </dict>
+    -->
+    
+    <!-- Specify Team ID if multiple teams exist -->
+    <!--
+    <key>teamID</key>
+    <string>YOUR_TEAM_ID</string>
+    -->
+</dict>
+</plist>

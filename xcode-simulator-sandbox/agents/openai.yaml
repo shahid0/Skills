@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Simulator Sandbox"
+  short_description: "Locate and manage iOS Simulator app storage"
+  default_prompt: "Use $xcode-simulator-sandbox to find sandbox folders, edit preferences (UserDefaults), and query SQLite databases."

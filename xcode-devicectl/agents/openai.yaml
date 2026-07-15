@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Devicectl"
+  short_description: "Manage and automate physical Apple devices via devicectl"
+  default_prompt: "Use $xcode-devicectl when interacting with, deploying to, or automating physical Apple devices using devicectl."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode UI Snapshots"
+  short_description: "Automate app screenshot capture matrices on simulators"
+  default_prompt: "Use $xcode-ui-snapshots to capture app screen screenshots under multiple devices, appearances, and dynamic text sizes."

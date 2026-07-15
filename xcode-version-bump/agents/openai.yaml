@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Version Bump"
+  short_description: "Manage app versions and export IPAs"
+  default_prompt: "Use $xcode-version-bump to increment build/marketing versions using agvtool, and archive/export signed packages using xcodebuild."
